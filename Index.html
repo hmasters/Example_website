@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet"
+			type="text/css"
+			href="style.css">
+
+	</head>
+	
+	<body>
+
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" datatoggle="
+					collapse" data-target="#navbar" aria-expanded="false" ariacontrols="
+					navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Awesome Project</a>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#overview">Overview</a></li>
+						<li><a href="#features">Features</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</nav>
+
+		<header>
+			<div class="container">
+				<div class="jumbotron">
+					<h1>Check it out!</h1>
+					<p class="lead">I'm doing things.
+					</p>
+					<p>
+						<a class="btn btn-lg btn-success" href="#p1"
+							role="button">If you're ever lost...</a>
+					</p>
+				</div>
+			</div>
+		</header>
+
+
+
+
+
+		<h1>My First Website</h1>
+			<p>Welcome to my website. I am learning how to code HTML. HTML outlines the structure of a website. I'm also learning CSS. CSS formats my website.
+
+		<br>
+		<br>
+
+		<h2 class="secondaryheaders">A little about me</h2>
+		<br>
+			<div class="container">
+				<div class="row">
+					<p>I have done very <small>little</small> coding, so <strong>please</strong> don't judge the appearance of <em>this</em> website. 
+				</div>
+				<div class="row">
+					<div class="col-sm-6"> 
+						I'm better at the following things:
+						<br>
+						<br>
+						<ul id="list1" style="list-style-type:square">
+							<li>Energy</li>
+							<li>Business Development</li>
+						</ul>	
+					</div>
+					<div class="col-sm-6">
+						<div style="color:green">
+						And some <span style="color:red">former jobs</span> are:
+						<br>
+						<br>
+						<ol>
+							<li>BizDev Manager</li>
+							<li>Divemaster</li>
+						</ol>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-sm-3">
+						<img src="http://showmeinstitute.org/sites/default/files/Energy.jpg" class="tablepictures">
+					</div>
+					<div class="col-sm-3">
+						<img src="https://www.mnrenewables.org/Wordpress/wp-content/uploads/2016/04/Full-Renewable-Energy-possible-by-2030.jpg" class="tablepictures" class="tablepictures">
+					</div>
+					<div class="col-sm-3">
+						<img src="http://image.slidesharecdn.com/occbizdev-141127033154-conversion-gate02/95/occvilnius-on-bizdev-for-startups-practicacapital-1-638.jpg?cb=1417059279" class="tablepictures" class="tablepictures">
+					</div>	
+					<div class="col-sm-3">
+						<img src="http://www.alexinwanderland.com/wp-content/uploads/2013/08/IMG_0262_1_11.jpg" class="tablepictures" class="tablepictures">
+					</div>	
+				</div>
+			</div>
+
+			<br>
+			You can learn more from my <a href="https://www.linkedin.com/in/harrymasters" target="_blank">LinkedIn</a> page.
+			<br>
+			<p>Feel free to check out <a href="http://www.cognitir.com/" target="_blank">Congitir's </a> website to learn how to do it way better. Or if you want it in a newtab, click <a href="http://www.cognitir.com/" target="_blank">here</a>.
+
+			<p id="prettyParagraph"> Check to see if this shizz works
+			</p>
+			<button type="button" onclick="applyStyling()">Make it pretty!</button>
+
+		<br>
+	
+		<br>
+		<h3 class="secondaryheaders">If you get confused...</h3>
+			<p id="p1">
+			Check out Google! <a href="https://www.google.com/" target="_blank"><img id="google" src="https://yt3.ggpht.com/-v0soe-ievYE/AAAAAAAAAAI/AAAAAAAAAAA/OixOH_h84Po/s900-c-k-no-mo-rj-c0xffffff/photo.jpg"></a>
+			</p>
+			
+
+			<p>
+			Here is me being a b school student
+			</p>
+			<img src="C:\Users\hmast\Documents\Kenan-Flagler\Career\Headshots\Finals\0W4A9795.jpg">
+		
+		
+
+		<script>
+			function applyStyling() {
+				var paragraph = document.getElementById("prettyParagraph");
+				paragraph.style.color = "green";
+				paragraph.style.fontSize = "29px";
+				paragraph.style.fontWeight = "700";
+			}
+		</script>
+
+	
+
+		<input id="numericInput" type="number">
+		<p id="result"></p>
+		<button type="button" onclick="testInput()">Test Input</button>
+
+		<script>
+			function testInput() {
+				// Create variable to store test result
+				var text;
+				// Get the value of the input field with id="numb"
+				var x = document.getElementById("numericInput").value;
+				if (isNaN(x) || x < 0 || x > 99) {
+				text = "Wrong input";
+				} else {
+				text = "Correct input";
+				}
+				// Display result
+				document.getElementById("result").innerHTML = text;
+			}
+		</script>
+
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					I am the first element in the carousel.
+				</div>
+				<div class="item">
+					I am the second element in the carousel.
+				</div>
+			</div>
+		</div>
+
+
+
+		<script
+			src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+		</script>
+
+		<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+		</script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+			$("#myCarousel").carousel({interval: 5000});
+			});
+		</script>
+
+	</body>
+
+</html>

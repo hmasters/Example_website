@@ -1,0 +1,70 @@
+
+
+
+body {
+	text-align:center;
+	background-color: rgb(199,231,220);
+}
+
+h1 {
+		/* Makes this header blue */
+		text-align: center;
+		color:blue;
+	}
+
+ul {
+
+}
+
+.jumbotron {
+
+}
+
+h2 {
+	font-family: Helvetica, "Trebuchet MS", sans-serif
+}
+	
+p {
+	
+	font-size: 15px
+}
+
+#p1 {
+	text-align: center;
+	color: blue;
+}
+
+.container p {
+	text-align: left;
+}
+
+.jumbotron p a {
+	display: center ;
+}
+
+#list1 ul li {
+	text-align: center;
+	display: inline;
+
+}
+
+
+.secondaryheaders {
+	color:blue;
+	font-size: 25px;
+}
+
+img {
+	height: 5%;
+	width:5%;
+}
+
+#google {
+	height: 2%;
+	width:2%;
+}
+
+.tablepictures {
+	height:80px;
+	width: 80px;
+}
